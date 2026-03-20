@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola, acá Seba</title>
+    <title>Hola Mundo Sigma</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -14,18 +14,18 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #0d0d0d;
-            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            background: #0a1628;
+            font-family: 'Montserrat', 'Segoe UI', sans-serif;
             overflow: hidden;
         }
 
         .bg {
             position: fixed;
             inset: 0;
-            background: radial-gradient(ellipse at 20% 50%, #7b2ff7 0%, transparent 50%),
-                        radial-gradient(ellipse at 80% 20%, #f72f7b 0%, transparent 45%),
-                        radial-gradient(ellipse at 60% 80%, #2ff7e0 0%, transparent 40%);
-            opacity: 0.25;
+            background: radial-gradient(ellipse at 20% 50%, #00b4d8 0%, transparent 50%),
+                        radial-gradient(ellipse at 80% 20%, #0077b6 0%, transparent 45%),
+                        radial-gradient(ellipse at 60% 80%, #00f5d4 0%, transparent 40%);
+            opacity: 0.2;
             animation: shift 8s ease-in-out infinite alternate;
         }
 
@@ -40,15 +40,15 @@
             border-radius: 24px;
             background: rgba(255,255,255,0.05);
             backdrop-filter: blur(16px);
-            border: 1px solid rgba(255,255,255,0.12);
-            box-shadow: 0 8px 64px rgba(0,0,0,0.5);
+            border: 1px solid rgba(0, 180, 216, 0.25);
+            box-shadow: 0 8px 64px rgba(0, 119, 182, 0.3);
             text-align: center;
         }
 
         h1 {
             font-size: 3.5rem;
             font-weight: 700;
-            background: linear-gradient(90deg, #f72f7b, #7b2ff7, #2ff7e0);
+            background: linear-gradient(90deg, #00b4d8, #0077b6, #00f5d4);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -57,8 +57,8 @@
         }
 
         @keyframes glow {
-            from { filter: drop-shadow(0 0 8px rgba(247, 47, 123, 0.5)); }
-            to   { filter: drop-shadow(0 0 20px rgba(123, 47, 247, 0.8)); }
+            from { filter: drop-shadow(0 0 8px rgba(0, 180, 216, 0.5)); }
+            to   { filter: drop-shadow(0 0 20px rgba(0, 119, 182, 0.8)); }
         }
 
         .sub {
@@ -73,7 +73,7 @@
 <body>
     <div class="bg"></div>
     <div class="card">
-        <h1>Hola, Fernando virtual</h1>
+        <h1>Hola mundo Sigma</h1>
         <p class="sub">bienvenido</p>
     </div>
 </body>
