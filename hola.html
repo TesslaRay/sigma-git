@@ -3,27 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola Mundo</title>
+    <title>Hola, acá Seba</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            margin: 0;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-            font-family: 'Segoe UI', sans-serif;
+            background: #0d0d0d;
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            overflow: hidden;
         }
+
+        .bg {
+            position: fixed;
+            inset: 0;
+            background: radial-gradient(ellipse at 20% 50%, #7b2ff7 0%, transparent 50%),
+                        radial-gradient(ellipse at 80% 20%, #f72f7b 0%, transparent 45%),
+                        radial-gradient(ellipse at 60% 80%, #2ff7e0 0%, transparent 40%);
+            opacity: 0.25;
+            animation: shift 8s ease-in-out infinite alternate;
+        }
+
+        @keyframes shift {
+            from { transform: scale(1); }
+            to   { transform: scale(1.15) rotate(3deg); }
+        }
+
+        .card {
+            position: relative;
+            padding: 60px 80px;
+            border-radius: 24px;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255,255,255,0.12);
+            box-shadow: 0 8px 64px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
         h1 {
-            color: #e94560;
-            font-size: 3rem;
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #f72f7b, #7b2ff7, #2ff7e0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 2px;
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { filter: drop-shadow(0 0 8px rgba(247, 47, 123, 0.5)); }
+            to   { filter: drop-shadow(0 0 20px rgba(123, 47, 247, 0.8)); }
+        }
+
+        .sub {
+            margin-top: 12px;
+            color: rgba(255,255,255,0.4);
+            font-size: 0.9rem;
             letter-spacing: 4px;
             text-transform: uppercase;
-            text-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
         }
     </style>
 </head>
 <body>
-    <h1>Hola, acá Seba</h1>
+    <div class="bg"></div>
+    <div class="card">
+        <h1>Hola, acá Seba</h1>
+        <p class="sub">bienvenido</p>
+    </div>
 </body>
 </html>
